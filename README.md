@@ -1,17 +1,54 @@
-# Learn-RUST
-A collection of projects and examples from my Rust learning journey 🦀. Covers basics, async programming, and building simple APIs with Axum. Perfect for beginners exploring Rust and looking for practical, hands-on code samples to understand concepts step-by-step.
+#Learn Rust
+🦀 Learn Rust – My Journey to Rust Mastery
 
+This repository is a collection of projects, experiments, and examples from my journey to becoming an expert in Rust.
+I aim to explore all aspects of Rust — from basic syntax to advanced topics — with a strong focus on:
 
-Learn Rust 🦀
-A personal journey into learning the Rust programming language.
-This repository contains small projects, examples, and experiments to explore Rust’s features — from basic syntax to building APIs using frameworks like Axum.
+High-performance APIs (REST, gRPC, GraphQL)
 
-Contents:
+Networking (custom TCP/UDP servers, protocol design, WebSockets, zero-copy data)
 
-🛠 Basic Rust programs & syntax examples
+Async & Concurrency with tokio, async/await, and parallel processing
 
-🌐 Simple GET API with Axum
+Systems programming and low-level memory management
 
-⚡ Async programming basics in Rust
+Compiler insights and optimizations
 
-📂 Organized code to learn step-by-step
+Performance tuning and benchmarking
+
+Safe & efficient code patterns leveraging Rust’s ownership model
+
+Cross-platform development targeting Linux, Windows, and WebAssembly
+
+📚 Contents
+🚀 Basics & Syntax
+
+Variables, ownership, borrowing, lifetimes
+
+Structs, enums, pattern matching
+
+Traits, generics, modules, error handling
+
+🌐 APIs & Networking
+
+Building REST APIs with Axum
+
+Asynchronous server handling with tokio
+
+WebSocket communication
+
+Writing custom TCP/UDP servers
+
+Experimenting with zero-copy networking
+
+⚡ Advanced Rust
+
+Unsafe Rust (when and how to use it)
+
+Compiler-level optimizations
+
+Memory layout & profiling
+
+Async performance tuning
+
+Creating custom crates and libraries
