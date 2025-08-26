@@ -4,21 +4,15 @@ use axum::{
     Router
 };
 
-pub async fn RoutersConfig() {
+static let app = Router::new()
+    .route("/", get(root)
+    .route("/user", user));
 
-    let ip = "127.0.0.1";
-    let port = "3000";
+async fn root() {
 
-    let ip_address = String::from(format!("{}:{}",ip,port));
-
-    let app = router();
-
-    let listener = tokio::net::TcpListener::bind(&ip_address.clone())
-                                .await
-                                .unwrap();
-
-    
-    
 }
 
+async fn user() {
+
+}
 

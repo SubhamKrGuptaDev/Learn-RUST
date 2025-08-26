@@ -1,0 +1,1 @@
+C:\Users\subha\OneDrive\Desktop\RUST\Learn-RUST\Basic\ownership\ownership_learning\target\debug\ownership_learning.exe: C:\Users\subha\OneDrive\Desktop\RUST\Learn-RUST\Basic\ownership\ownership_learning\src\main.rs
