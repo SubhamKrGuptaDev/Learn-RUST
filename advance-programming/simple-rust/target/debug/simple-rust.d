@@ -1,0 +1,1 @@
+C:\Users\subha\OneDrive\Desktop\RUST\Learn-RUST\advance-programming\simple-rust\target\debug\simple-rust.exe: C:\Users\subha\OneDrive\Desktop\RUST\Learn-RUST\advance-programming\simple-rust\src\main.rs
