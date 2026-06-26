@@ -35,8 +35,14 @@ fn main() {
     // num += 12;
     println!("Number : {num}");
 
+    // Tuple with Function
     let (num1,num2,num3) = tuple_value(1,4, 8);
     println!("num1 : {num1} | num2 : {num2} | num3 : {num3}");
+
+    // Shadowing 
+    let x = 13;
+    let x_value = shadowing_fun(x);
+    print!("X Value in Shadowing : {x_value}");
 
 } 
 
@@ -51,5 +57,9 @@ fn tuple_value(num1:i32, num2:i32, num3:i32) -> (i32,i32,i32) {
 }
 
 // Shadowing Function
-
+fn shadowing_fun(x: i32) -> i32 {
+    let mut x = x;
+    x += 30;
+    x
+}
 
