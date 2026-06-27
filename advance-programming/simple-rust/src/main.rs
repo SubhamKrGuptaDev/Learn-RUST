@@ -1,3 +1,6 @@
+#![allow(unused_variables)] // Ignore warnings directive
+#![allow(dead_code)] // Ignore warnings directive
+
 
 fn main() {
 
@@ -45,6 +48,10 @@ fn main() {
     print!("X Value in Shadowing : {x_value}\n");
 
     condition_fun();
+
+    loop_function();
+
+    variable_convention();
 } 
 
 // Mutability in Function param
@@ -109,14 +116,100 @@ fn match_fun() {
         90..=100 => grade = 'A', // condition [Pattern Matching] => after match code need to run
         80..=89 => grade = 'B',
         50..=79 => grade = 'C',
-        _=> grade = 'F', // if not matched [default]
+        _ => grade = 'F', // if not matched [default] [Match aerm]
     }
 
     println!("Mark : {marks} | Grade : {grade}");
 }
 
+// Loop
+fn loop_function() {
 
+    // Infinity Times executes 
+    'outer: loop {
+        loop {
+            println!("Simple Printing Loop"); // Infinity Times 
+            break 'outer; // Break based on name 
+        }
+    }
 
+    let a_value = loop {
+        break 10
+    };
 
+    println!("Value A : {a_value}");
 
+    // For Loop 
+    let vec = vec![10, 20, 30, 40];
+    for i in vec {
+        println!("Array value : {i}");
+    }
+
+    // Range can be store in variable
+    let range = ..;
+    let range_value  = 0..=5;
+
+    // println!("Range Object Value : {range}");
+
+    // Range can't be float value flat value not valid
+    // Compound Data type versus Collection [Compound data type which size we know]
+    println!("==================================");
+    for i in 0..=5 { // if [0..] => infinity times loop will be execute 
+        println!("For Loop Value : {i}");
+    }
+    // Ranges always increament value not be decreament 0..=5 we can't add [5..=0 => X]
+    // We have .rev() method to reverse the order => (0..=5).rev()
+
+    for i in (0..=5).rev() { // Reverse order
+        println!("For Loop Value : {i}");
+    }
+    println!("==================================");
+
+    // Iteration with step size [default = 1]
+    for i in (1..=10).step_by(2) { // step will be 2
+        println!("For Loop Value : {i}");
+    }
+
+    let pairs = vec![(10, "Subham"), (11, "Gupta")];
+
+    for (id, name) in pairs {
+        println!("{} : {}", id, name);
+    }
+
+    // While Loop
+    let mut num_value = 0;
+    while num_value < 10 {
+        println!("Number Value : {num_value}");
+        num_value += 1;
+    }
+
+}
+
+fn variable_convention() {
+
+    let _unused_variable = 20; // before variable name _ add for conventions 
+
+    let _x_value = 20_000;
+
+    // Static and Constants are same 
+    static _WELCOME: &str = "Welcome to Coding world";
+
+    /*
+
+    Static => Fixed memory location
+    Constants => Constants are in line with no memory address
+    while static occupy fixed memory address
+    
+    */
+    
+}
+
+fn compile_directive() {
+    let x = 10;
+    let y = 20;
+}
+
+fn error_code() {
+    
+}
 
