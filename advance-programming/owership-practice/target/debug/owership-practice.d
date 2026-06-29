@@ -1,0 +1,1 @@
+C:\Users\subha\OneDrive\Desktop\RUST\Learn-RUST\advance-programming\owership-practice\target\debug\owership-practice.exe: C:\Users\subha\OneDrive\Desktop\RUST\Learn-RUST\advance-programming\owership-practice\src\main.rs
