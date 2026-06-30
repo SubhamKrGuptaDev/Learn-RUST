@@ -1,4 +1,3 @@
-
 fn main() {
     // Function that take ownership
     let vec_1 = vec![1,2,3,4,5,6];
@@ -12,7 +11,16 @@ fn main() {
     // Function that take and give ownership
     let vec_3 = vec![6,3,32,9,0,1,3,5];
     let result_vec = take_and_give_ownership(vec_3);
-    println!("Vec 3 : {:?}", result_vec)
+    println!("Vec 3 : {:?}", result_vec );
+
+
+    // Borrowing 
+    let mut vec_1 = vec![1,2,3,5];
+    let ref_1 = &mut vec_1;
+
+    println!("Reference Data : {:?}",ref_1);
+    ref_1.push(60);
+    println!("Reference Data : {:?}",vec_1);
 
 }
 
